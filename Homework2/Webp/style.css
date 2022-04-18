@@ -1,7 +1,11 @@
+body {
+    min-height: 100vh;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    position: relative;
 }
 
 .right {
@@ -9,7 +13,7 @@
 }
 
 .left {
-    width: 64%;
+    width: 65%;
     padding-right: 3%;
 }
 
