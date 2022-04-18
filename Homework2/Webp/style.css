@@ -1,0 +1,31 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right {
+    width: 35%;
+}
+
+.left {
+    width: 64%;
+    padding-right: 3%;
+}
+
+.first_image {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.big_image {
+    width: 85%;
+}
+
+.down {
+    width: 100%;
+}
+
+.page {
+    cursor: pointer;
+}
