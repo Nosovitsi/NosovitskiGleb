@@ -8,18 +8,30 @@ body {
     position: relative;
 }
 
-.right {
+.left {
     width: 35%;
+    position: relative;
 }
 
-.left {
+.right {
     width: 65%;
     padding-right: 3%;
+    position: relative;
+}
+
+.left1 {
+    width: 65%;
+    padding-right: 3%;
+}
+
+.right1 {
+    width: 35%;
 }
 
 .first_image {
     width: 100%;
     border-radius: 10%;
+    border: 1px brown solid;
 }
 
 .big_image {
