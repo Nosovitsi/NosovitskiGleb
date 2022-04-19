@@ -1,5 +1,6 @@
 body {
     min-height: 100vh;
+    margin: 10px;
 }
 
 .content {
@@ -12,12 +13,12 @@ body {
 }
 
 .right {
-    width: 65%;
-    padding-right: 3%;
+    width: 63%;
+    padding-left: 3%;
 }
 
 .left1 {
-    width: 65%;
+    width: 63%;
     padding-right: 3%;
 }
 
@@ -37,4 +38,9 @@ body {
 
 .down {
     width: 100%;
+}
+
+p {
+    font-family: 'Caveat', cursive;
+    font-size: 21px;
 }
