@@ -5,18 +5,15 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 .left {
     width: 35%;
-    position: relative;
 }
 
 .right {
     width: 65%;
     padding-right: 3%;
-    position: relative;
 }
 
 .left1 {
@@ -40,8 +37,4 @@ body {
 
 .down {
     width: 100%;
-}
-
-.page {
-    cursor: pointer;
 }
