@@ -1,0 +1,6 @@
+.chuck {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    border: 1px brown solid;
+}
