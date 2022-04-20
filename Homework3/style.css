@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("./kraska_razvody_puzyri_139960_3840x2160.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.left {
+    width: 35%;
+}
+
+.right {
+    width: 63%;
+    padding-left: 3%;
+}
+
+.left1 {
+    width: 63%;
+    padding-right: 3%;
+}
+
+.right1 {
+    width: 35%;
+}
+
+.first_image {
+    width: 100%;
+    border-radius: 10%;
+    border: 1px brown solid;
+}
+
+.big_image {
+    width: 85%;
+}
+
+.down {
+    width: 100%;
+}
+
+p {
+    font-family: 'Caveat';
+    font-size: 21px;
+}
