@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-    background-image: url("./kraska_razvody_puzyri_139960_3840x2160.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .content {
     display: flex;
     justify-content: space-between;
@@ -51,6 +43,6 @@ body {
 }
 
 p {
-    font-family: 'Caveat', sans-serif;
-    font-size: 21px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 23px;
 }
