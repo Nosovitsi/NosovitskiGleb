@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <p>Вы никогда не пробовали задавать цвет фона в HTML при помощи разных строк? Например, строка</p>
+    <p>Вы никогда не пробовали задавать цвет фона в HTML при помощи разных строк?
+        <br>Например, строка</p>
 
     <div class="chuck">
         <font color="chucknorris">&lt;body bgcolor="chucknorris"&gt; test &lt;/body&gt;</font>
@@ -27,8 +28,33 @@
 
     <p>
         Если применить правила, описанные в статье об анализе цветов в Microsoft Internet Explorer:
-        <a href="url('http://scrappy-do.blogspot.com/2004/08/little-rant-about-microsoft-internet.html')">A little rant about Microsoft Internet Explorer's color parsing</a>
+        <a href="url('http://scrappy-do.blogspot.com/2004/08/little-rant-about-microsoft-internet.html')">
+            <br>A little rant about Microsoft Internet Explorer's color parsing</a>
         <br>то получится следующее:
+    </p>
+    <ul>
+        <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, chucknorris
+            <br>превращается в <b>c00c0000000</b>
+        </li>
+        <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем
+            <br><b>c00c 0000 0000</b>
+        </li>
+        <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB:
+            <br><b>RGB (c00c, 0000, 0000)</b>
+        </li>
+        <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат
+            <br><b>RGB (c0, 00, 00) = #C00000 или он же RGB(192, 0, 0).</b>
+        </li>
+    </ul>
+    <p>Вот и получаем мы следующее:</p>
+    <img src="./color.png">
+    <p>Кстати, похоже, что в CSS спецификацию все-таки изменили, так что неправильные имена
+        <br>цветов попросту игнорируются:
+    </p>
+    <p class="text">
+        &lt;p&gt;&lt;font color='chucknorris'&gt;Красный&lt;/font&gt;&lt;/p&gt;
+        <br>&lt;p&gt;&lt;font color='#cc0000'&gt;И тут тоже красный&lt;/font&gt;&lt;/p&gt;
+        <span class="text1"><br>&lt;p&gt;&lt;span style="color: chucknorris"&gt;Черный!&lt;/span&gt;&lt;/p&gt;</span>
     </p>
 </body>
 
