@@ -1,10 +1,9 @@
 .skovorodka {
-    padding-top: 150px;
+    padding-top: 160px;
 }
 
 .div {
     width: 600px;
-    border: 1px red solid;
     background-image: url('./skovorodka_big.png');
     background-repeat: no-repeat;
 }
