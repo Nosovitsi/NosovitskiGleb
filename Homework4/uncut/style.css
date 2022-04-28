@@ -1,0 +1,5 @@
+div {
+    border: 500px solid;
+    border-image: url(./ramka.png) 150 round;
+    border-image-width: 50px;
+}
