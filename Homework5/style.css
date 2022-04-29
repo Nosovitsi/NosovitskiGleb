@@ -1,0 +1,19 @@
+.table {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.top {
+    background-color: lightskyblue;
+    color: blue;
+}
+
+.left {
+    background-color: darkkhaki;
+}
+
+.ball {
+    background-image: url(./ball3.png);
+    background-position: right;
+    background-repeat: repeat-y;
+}
