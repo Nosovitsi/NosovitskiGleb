@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Area</title>
+</head>
+
+<body>
+    <p>Каждый элемент <area> определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного
+        изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Тег <area> задает форму области, ее размеры, устанавливает адрес документа, на который следует сделать ссылку, а также имя окна
+        или фрейма, куда браузер будет загружать документ. Этот тег всегда располагается в контейнере <map>, который связывает координаты областей с изображением.</p>
+        <p>Несколько областей могут перекрывать друг друга, сверху будет та, которая в коде HTML располагается выше.</p>
+    <div id="title"><img src="img.png" width="640" height="158" alt="Детский образовательный центр"><br>
+        <img src="navigate.png" width="640" height="30" alt="Навигация по сайту" usemap="#Navigation"></div>
+    <p><map name="Navigation">
+  <area shape="poly" coords="113,24,211,24,233,0,137,0" href="page/inform.html" alt="Информация">
+  <area shape="poly" coords="210,24,233,0,329,0,307,24" href="page/activity.html" alt="Мероприятия">
+  <area shape="poly" coords="304,24,385,24,407,0,329,0" href="page/depart.html" alt="Отделения">
+  <area shape="poly" coords="384,24,449,24,473,0,406,0" href="page/techinfo.html" alt="Техническая информация">
+  <area shape="poly" coords="449,24,501,24,525,0,473,0" href="page/study.html" alt="Обучение">
+  <area shape="poly" coords="501,24,560,24,583,0,525,0" href="page/work.html" alt="Работа">
+  <area shape="poly" coords="560,24,615,24,639,0,585,0" href="page/misk.html" alt="Разное">
+  </map></p>
+
+</body>
+
+</html>
