@@ -1,0 +1,29 @@
+.First_link a:nth-child(odd) {
+    color: #ff0000
+}
+
+.First_link a:nth-child(even) {
+    color: #000000;
+    text-decoration: none;
+}
+
+.Second_link a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.Second_link a:nth-child(-n+4)::after {
+    content: "|";
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+[href*="#"] {
+    color: #ff0000;
+}
+
+[href*="*"] {
+    color: #000000;
+    text-decoration: none;
+}
