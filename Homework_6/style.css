@@ -9,7 +9,6 @@
 
 .Second_link a {
     color: #ff0000;
-    text-decoration: none;
 }
 
 .Second_link a:nth-child(-n+4)::after {
@@ -24,6 +23,30 @@
 }
 
 [href*="*"] {
+    color: #000000;
+    text-decoration: none;
+}
+
+.Forth_link a {
+    color: #ff0000;
+}
+
+.Forth_link a:nth-child(n+2)::before {
+    content: "|";
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.Fifth_link a {
+    color: #ff0000;
+    display: inline;
+}
+
+.Fifth_link a:nth-child(-n+4)::after {
+    display: inline;
+    content: "|";
+    padding: 5px;
     color: #000000;
     text-decoration: none;
 }
