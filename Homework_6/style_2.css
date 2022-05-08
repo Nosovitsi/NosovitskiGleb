@@ -16,18 +16,18 @@ tr:nth-child(odd) td:nth-child(odd) {
     background-color: black;
 }
 
-tr:first-child td {
+table.CHESS tr:first-child td {
     background-color: darkseagreen;
     height: 50px;
 }
 
-tr:last-child td {
+table.CHESS tr:last-child td {
     background-color: darkseagreen;
     height: 50px;
 }
 
-td:first-child,
-td:last-child {
+table.CHESS td:first-child,
+table.CHESS td:last-child {
     background-color: darkseagreen;
     height: 50px;
 }
