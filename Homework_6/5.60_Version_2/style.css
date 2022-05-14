@@ -1,0 +1,19 @@
+.big {
+    font-size: 25px;
+}
+
+.green {
+    color: darkgreen;
+}
+
+.red {
+    color: brown;
+}
+
+.blue {
+    color: blue;
+}
+
+.information::before {
+    content: url(./extref.png);
+}

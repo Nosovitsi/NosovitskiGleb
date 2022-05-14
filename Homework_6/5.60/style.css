@@ -1,0 +1,22 @@
+.big {
+    font-size: 25px;
+}
+
+.green {
+    color: darkgreen;
+}
+
+.red {
+    color: brown;
+}
+
+.blue {
+    color: blue;
+}
+
+.information {
+    background-image: url(./extref.png);
+    background-position: left center;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+}
