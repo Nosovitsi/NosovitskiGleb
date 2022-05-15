@@ -1,15 +1,15 @@
-div img {
+.star img {
     float: right
 }
 
-div img:hover {
+.star img:hover {
     content: url(./star1.png)
 }
 
-div img:hover~img {
+.star img:hover~img {
     content: url(./star1.png)
 }
 
-div {
+.star {
     float: left;
 }
