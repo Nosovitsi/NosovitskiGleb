@@ -1,0 +1,30 @@
+body {
+    background-image: url(./introduction.jpg);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Caveat';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: 'Caveat';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+}
+
+p {
+    font-family: 'Caveat';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+span {
+    color: brown;
+}

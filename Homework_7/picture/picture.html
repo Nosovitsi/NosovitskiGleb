@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Caveat/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Picture</title>
+</head>
+
+<body>
+    <h1>HTML &#60;picture&#62; Тег</h1>
+    <h2>Определение и использование</h2>
+    <p>Тег <span>&#60;picture&#62;</span> позволяет веб-разработчикам больше гибкости в определении ресурсов изображения.</p>
+    <p>Тег <span>&#60;picture&#62;</span> используется для хранения одного и более элементов <span>&#60;source&#62;</span> и элемента <span>&#60;img&#62;</span>. В каждом элементе <span>&#60;source&#62;</span> содержится имя файла альтернативных версий изображения,
+        а также условия, при которых браузер должен их загрузить.</p>
+    <p>Браузер по очереди рассматривает содержание дочерних элементов
+        <span>&#60;source&#62;</span>, и в случае, если ни одно из указанных условий для загрузки изображений не может быть удовлетворено, браузер загружает изображение, указанное в теге <span>&#60;img&#62;</span>.</p>
+
+    <p>Использование элемента
+        <span>&#60;picture&#62;</span> позволяет загружать несколько вариантов изображения, оптимизированных под различные размеры и другие параметры экрана.</p>
+
+    <picture>
+        <source media="(min-width: 1000px)" srcset="Captain2.png">
+        <source media="(min-width: 600px)" srcset="Chaplain.png">
+        <img src="./SM.png" alt="Flowers" style="width:auto;">
+    </picture>
+
+</body>
+
+</html>
