@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .SBig {
+            display: none;
+            width: 300px;
+        }
+        
+        .SBig:target {
+            display: block !important;
+            width: 300px;
+        }
+        
+        .img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#N">Настя</a>
+    <a href="#T">Тома</a>
+    <a href="#G">Глеб</a>
+
+    <div class="SBig" id="N">
+        <img src="./pantera.jpg" class="img">
+    </div>
+
+    <div class="SBig" id="T">
+        <img src="./monkey.jpg" class="img">
+    </div>
+
+    <div class="SBig" id="G">
+        <img src="./1-226.jpg" class="img">
+    </div>
+</body>
+
+</html>
