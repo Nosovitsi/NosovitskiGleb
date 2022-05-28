@@ -116,9 +116,9 @@ span {
 
 .menu__nav li {
     display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin: 200px 50px;
+    margin-left: 30px;
+    margin-right: 90px;
+    margin-top: 200px;
 }
 
 .menu__nav a {
@@ -141,12 +141,17 @@ span {
     padding-left: 30px;
 }
 
+.menu__nav a:hover {
+    text-shadow: 0 0 2px;
+    transition: 0.4s;
+}
+
 
 /* Chapter VI */
 
 .wrapper__2 {
     background-color: #242B33;
-    height: 1226px;
+    height: 1250px;
 }
 
 .icon__top {
@@ -194,11 +199,82 @@ span {
 
 .icon__background {
     background-image: url(../Media/II.png);
-    background-position: center;
+    background-position: bottom 50px right 50px;
     background-repeat: no-repeat;
     height: 420px;
-    margin-left: 800px;
 }
 
 
 /* Chapter VII */
+
+.container_2 {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* Chapter VIII */
+
+.flat__background {
+    height: 469px;
+    background-image: url(../Media/III.png);
+    background-position: bottom 85px left 0;
+    background-repeat: no-repeat;
+}
+
+.flat h3 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+}
+
+
+/* Chapter IX */
+
+.gallery__1 li {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.gallery__img_1 {
+    width: 535px;
+    height: 320px;
+    background-image: url(../Media/loft_3.png);
+    padding-top: 250px;
+    padding-left: 50px;
+}
+
+.gallery__img_2 {
+    width: 535px;
+    height: 320px;
+    background-image: url(../Media/loft_2.png);
+    padding-top: 250px;
+    padding-left: 50px;
+}
+
+.gallery__2 li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+/* Chapter X */
+
+.wrapper__3 {
+    background-image: url(../Media/Big_image_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+}
