@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Chapter I */
+
+.wrapper__1 {
+    background-image: url(../Media/Rectangle.png);
+    height: 840px;
+    background-size: cover;
+}
+
+.header .container {
+    padding-top: 0.1px;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Post No Bills Jaffna', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    float: left;
+}
+
+.header ul {
+    float: right;
+}
+
+.header ul li {
+    float: left;
+    margin-top: 55px;
+    margin-left: 40px;
+}
+
+.header ul li a {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.header ul li a:hover {
+    text-shadow: 0 0 2px;
+    transition: 0.4s;
+}
+
+
+/* Chapter II */
+
+.menu__top {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+}
+
+
+/* Chapter III */
+
+.menu__middle {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.menu__middle h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #D4C17F;
+}
+
+
+/* Chapter IV */
+
+.menu_pointer p {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* Chapter V */
+
+.menu__nav li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: 200px 50px;
+}
+
+.menu__nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.menu__nav li:first-child {
+    background-image: url(../Media/Pointer.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+.menu__nav li:last-child {
+    background-image: url(../Media/Phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+
+/* Chapter VI */
+
+.wrapper__2 {
+    background-color: #242B33;
+    height: 1226px;
+}
+
+.icon__top {
+    margin: 0 auto;
+}
+
+.icon__top li {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.icon__top li:nth-child(1) {
+    background-image: url(../Media/Icon_1.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 139px;
+}
+
+.icon__top li:nth-child(2) {
+    background-image: url(../Media/Icon_2.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 139px;
+}
+
+.icon__top li:nth-child(3) {
+    background-image: url(../Media/Icon_3.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 139px;
+}
+
+.icon__top li:nth-child(4) {
+    background-image: url(../Media/Icon_4.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 119px;
+}
+
+.icon__background {
+    background-image: url(../Media/II.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 420px;
+}
+
+
+/* Chapter VII */
