@@ -278,3 +278,228 @@ span {
     background-size: cover;
     height: 560px;
 }
+
+.wrapper__3 .container {
+    padding-top: 0.1px;
+}
+
+
+/* Chapter XI */
+
+.look {
+    margin-top: 180px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+}
+
+.look_left {
+    width: 50%;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.look_right {
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* Chapter XII */
+
+.look_right_1 li,
+.look_right_2 li {
+    display: inline-block;
+}
+
+.box {
+    display: block;
+    width: 255px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.box_1,
+.box_2 {
+    background: #bebebe2a;
+    font-size: 14px;
+    line-height: 27px;
+    border: 1px black solid;
+    color: #FFFFFF;
+    box-shadow: 8px 0px 8px #242B33;
+}
+
+.box_3 {
+    font-size: 13px;
+    line-height: 16px;
+    color: #E7E7E7;
+    padding: 0;
+}
+
+.box_4 {
+    /* background: #D4C17F; */
+    color: #242B33;
+    box-shadow: 8px 0px 8px #242B33;
+}
+
+
+/* Chapter XIII */
+
+.wrapper__4 {
+    background-color: #242B33;
+    height: 1680px;
+}
+
+.wrapper__4 .container {
+    padding-top: 0.1px;
+}
+
+.video {
+    margin: 200px;
+}
+
+.video__background {
+    background-image: url(../Media/IV.png);
+    background-position: bottom 35px right 10px;
+    background-repeat: no-repeat;
+    height: 420px;
+}
+
+.video__backgrounf__2 {
+    background-image: url(../Media/video.png);
+    width: 660px;
+    margin: 0 auto;
+    height: 500px
+}
+
+
+/* Chapter XIV */
+
+.district__name {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin-top: 180px;
+}
+
+.map__background {
+    height: 469px;
+    background-image: url(../Media/V.png);
+    background-position: bottom 130px left 30px;
+    background-repeat: no-repeat;
+}
+
+.map {
+    height: 360px;
+    margin-top: 120px;
+}
+
+
+/* Chapter XV */
+
+.question__name {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin-top: 180px;
+}
+
+.button li {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: -1px;
+}
+
+
+/* Chapter XV */
+
+.footer {
+    background: #2D343C;
+    height: 272px;
+}
+
+.footer .container {
+    margin-top: px;
+}
+
+.footer__left {
+    width: 25%;
+}
+
+.logo_2 {
+    font-family: 'Post No Bills Jaffna', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-top: 60px;
+    float: left;
+}
+
+.logo_3 {
+    float: left;
+}
+
+
+/* Chapter XVI */
+
+.footer__right {
+    width: 73%;
+    margin-top: 55px;
+    margin-left: 25%;
+}
+
+.list {
+    width: 100%;
+}
+
+.footer__1 {
+    float: left;
+    width: 33%;
+    margin-top: -40px;
+}
+
+.footer__2 {
+    width: 33%;
+    margin-left: 33%;
+}
+
+.footer__3 {
+    width: 33%;
+    float: right;
+    margin-top: -40px;
+}
+
+.footer__1 li,
+.footer__2 li,
+.footer__3 li {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.footer__3 span {
+    text-transform: none;
+    color: #D4C17F;
+}
+
+.last li {
+    display: inline-block;
+    margin-right: 10px;
+}
