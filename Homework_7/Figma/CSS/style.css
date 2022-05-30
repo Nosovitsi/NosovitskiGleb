@@ -503,3 +503,28 @@ span {
     display: inline-block;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 1520px) {
+    .container_2 {
+        width: 1400px;
+    }
+    .container {
+        width: 1000px;
+    }
+    .gallery__img_1 {
+        width: 480px;
+        height: 290px;
+        background-image: url(../Media/loft_3.png);
+        background-size: cover;
+        padding-top: 250px;
+        padding-left: 50px;
+    }
+    .gallery__img_2 {
+        width: 480px;
+        height: 290px;
+        background-image: url(../Media/loft_2.png);
+        background-size: cover;
+        padding-top: 250px;
+        padding-left: 50px;
+    }
+}
