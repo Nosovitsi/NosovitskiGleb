@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Document</title>
+    <style>
+        label {
+            float: left;
+            width: 200px;
+        }
+        
+        .title {
+            margin-left: 200px;
+            margin-right: 5px;
+        }
+        
+        .title_input {
+            width: 100%;
+        }
+        
+        textarea {
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 700px) {
+            label {
+                width: 100%;
+            }
+            .title {
+                margin-left: 0px;
+            }
+            select {
+                width: 100%;
+            }
+            .publication {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <legend>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</legend>
+
+        <label for="name">Название статьи:</label>
+        <div class="title">
+            <input type="text" name="name" class="title_input">
+        </div>
+        <label for="choice">Рубрика:</label>
+        <div class="select"><select name="choice"> select: 
+                            <option value="1">Компьютерная техника</option>
+                            <option value="2">Графика и дизайн</option>
+                            <option value="3">Программирование</option>
+                        </select>
+        </div>
+        <label for="publication">Публикация:</label>
+        <div class="publication">
+            <input type="radio" value="status2" name="publication"> На сайте
+            <input type="radio" value="status3" name="publication"> В журнале
+            <input type="radio" value="status4" name="publication"> На сайте и в журнале
+        </div>
+        <input type="checkbox" name="status"> Разрешить комментарии
+        <br>
+        <textarea name="forma">Форма отправки
+                            </textarea>
+        <br> <input type="submit" value="Отправить" name="enter">
+
+
+</body>
+
+</html>
