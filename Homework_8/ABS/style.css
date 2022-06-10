@@ -1,0 +1,51 @@
+.figure {
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bio {
+    top: 5px;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+}
+
+.bio:hover {
+    z-index: 10;
+}
+
+.man {
+    top: 0px;
+    position: absolute;
+    right: 20px;
+    z-index: 0;
+}
+
+.man:hover {
+    z-index: 10;
+}
+
+.smoke {
+    top: 70px;
+    position: absolute;
+    left: 115px;
+    z-index: 1;
+}
+
+.smoke:hover {
+    z-index: 10;
+}
+
+.yin {
+    top: 205px;
+    position: absolute;
+    left: 145px;
+    z-index: 0;
+}
+
+.yin:hover {
+    z-index: 10;
+}
