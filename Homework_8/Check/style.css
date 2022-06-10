@@ -1,0 +1,25 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: relative;
+}
+
+label:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("standard_disabled.png") no-repeat 0px -5px;
+    position: absolute;
+    background-size: 130px;
+}
+
+input:checked+label:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("standard_disabled.png") no-repeat -50px -5px;
+    position: absolute;
+    background-size: 130px;
+}
