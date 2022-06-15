@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+
+/* ..........................................  Header  .......................................... */
+
+.header {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    height: 690px;
+    background: linear-gradient(218.65deg, #056088 37.74%, #023957 83.31%);
+}
+
+.header_left {
+    width: 680px;
+    width: 30%;
+}
+
+.header_left h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 77px;
+    color: #FFFFFF;
+}
+
+.header_right {
+    display: flex;
+    height: 690px;
+    width: 70%;
+}
+
+.header_wrap {
+    background-image: url(../Media/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 690px;
+    width: 100%;
+    clip-path: polygon(1px 690px, 1009px 689px, 1008px -5px, 249px -3px);
+}
+
+.header_menu {
+    display: flex;
+    justify-content: right;
+    height: 108px;
+    background-color: white;
+}
+
+.header_menu li {
+    display: inline-block;
+    padding-right: 40px;
+    padding-top: 57px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #023957;
+}
+
+.header_menu li:last-child {
+    padding-right: 70px;
+}
