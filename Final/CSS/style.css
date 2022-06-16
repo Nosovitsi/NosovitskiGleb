@@ -8,6 +8,11 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     font-family: 'Poppins';
 }
@@ -23,9 +28,13 @@ body {
     background: linear-gradient(218.65deg, #056088 37.74%, #023957 83.31%);
 }
 
+
+/* ..........................................  Header left part .......................................... */
+
 .header_left {
     width: 680px;
     width: 30%;
+    position: relative;
 }
 
 .header_left h2 {
@@ -35,7 +44,60 @@ body {
     font-size: 66px;
     line-height: 77px;
     color: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 82px;
 }
+
+.title {
+    width: 740px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 83px;
+    margin-left: 103px;
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.header_text {
+    width: 445px;
+    margin-top: 253px;
+    margin-left: 103px;
+}
+
+.header_text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.contact_button {
+    padding: 22px 40px;
+    display: block;
+    text-align: center;
+    background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+    margin-left: 103px;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+    border: none;
+}
+
+.contact_button:hover {
+    background: darkorange;
+    text-shadow: 0 1px 10px;
+    transition: 0.4s;
+}
+
+
+/* ..........................................  Header right part .......................................... */
 
 .header_right {
     display: flex;
@@ -50,7 +112,7 @@ body {
     background-position: center;
     height: 690px;
     width: 100%;
-    clip-path: polygon(1px 690px, 1009px 689px, 1008px -5px, 249px -3px);
+    clip-path: polygon(16px 692px, 1009px 689px, 1008px -5px, 295px -4px);
 }
 
 .header_menu {
@@ -72,4 +134,10 @@ body {
 
 .header_menu li:last-child {
     padding-right: 70px;
+}
+
+.header_menu a:hover {
+    color: darkorange;
+    text-shadow: 0 1px 10px;
+    transition: 0.4s;
 }
