@@ -15,6 +15,12 @@ a {
 
 body {
     font-family: 'Poppins';
+    font-style: normal;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -22,8 +28,6 @@ body {
 
 .header {
     display: flex;
-    width: 1440px;
-    margin: 0 auto;
     height: 690px;
     background: linear-gradient(218.65deg, #056088 37.74%, #023957 83.31%);
 }
@@ -40,7 +44,7 @@ body {
 .header_left h2 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 66px;
     line-height: 77px;
     color: #FFFFFF;
@@ -51,13 +55,13 @@ body {
 .title {
     width: 740px;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     margin-top: 83px;
     margin-left: 103px;
 }
 
 .title h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 52px;
     line-height: 78px;
     color: #FFFFFF;
@@ -77,6 +81,7 @@ body {
 }
 
 .contact_button {
+    width: 200px;
     padding: 22px 40px;
     display: block;
     text-align: center;
@@ -88,12 +93,105 @@ body {
     line-height: 170%;
     color: #FFFFFF;
     border: none;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
 }
 
 .contact_button:hover {
-    background: darkorange;
+    /* background: darkorange; */
     text-shadow: 0 1px 10px;
     transition: 0.4s;
+    transform: scale(1.1);
+}
+
+
+/* ..........................................  Header popup .......................................... */
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup_content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup_body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.popup_content {
+    background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+    color: #FFFFFF;
+    max-width: 800px;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -200%) rotateX(45deg);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
+}
+
+.popup_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    margin: 0px 0px 1em 0px;
+}
+
+.popup_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-shadow: 0 1px 10px;
+}
+
+
+/* Здесь использовал формат svg, потому что хотел перекарсить иконки в оранжевый + возможность динамически менять цвет всех иконок, не ломая верстку */
+
+.popup_phone {
+    background-image: url(../Media/Phone_logo.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+.popup_mail {
+    background-image: url(../Media/Mail_logo.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
 }
 
 
@@ -105,11 +203,14 @@ body {
     width: 70%;
 }
 
+
+/* Здесь выбирал между png и jpeg, с учетом того, что это первое, что видит пользователь, решил оставить формат jpeg, но без сжатия */
+
 .header_wrap {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-image: url(../Media/header.png);
+    background-image: url(../Media/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -156,5 +257,257 @@ body {
 }
 
 .header_gallery img {
-    padding-right: 20px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
+}
+
+.header_img {
+    padding: 20px
+}
+
+.header_img:hover {
+    transform: scale(1.1);
+    transition: all 0.8s ease 0s;
+}
+
+
+/* ..........................................  Content part I (gallery & company) .......................................... */
+
+.content {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.content_company {
+    display: flex;
+    width: 100%;
+}
+
+.content_gallery_box {
+    width: 50%;
+    position: relative;
+}
+
+.content_gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.content_gallery img {
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+
+.content_gallery img:hover {
+    transition: all 0.8s ease 0s;
+    transform: scale(1.1);
+}
+
+.gallery_column_1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.gallery_column_2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.gallery_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 90px;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 35%;
+    left: 37%;
+}
+
+.gallery_circle p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #056088;
+    background-image: url(../Media/Select_logo.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 70px;
+}
+
+.company_box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+}
+
+.company_box h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 170%;
+    color: #056088;
+}
+
+.company_box p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 180%;
+    color: #434343;
+    padding-top: 16px;
+    width: 425px;
+}
+
+.company_box p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #434343;
+}
+
+.company_statistic {
+    display: flex;
+    padding-top: 16px;
+}
+
+.company_statistic li {
+    display: inline-block;
+    padding-right: 62px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    color: #056088;
+}
+
+.contact_button_2 {
+    width: 200px;
+    padding: 22px 40px;
+    display: block;
+    text-align: center;
+    background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+    border: none;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(255, 191, 113, 0);
+}
+
+.contact_button_2:hover {
+    /* background: darkorange; */
+    text-shadow: 0 1px 10px;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+
+/* ..........................................  Content part II (service) .......................................... */
+
+.content_service {
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.service_title {
+    display: flex;
+    justify-content: center;
+}
+
+.service_text {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.content_service h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 170%;
+    color: #056088;
+}
+
+.content_service p {
+    width: 348px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: center;
+    color: #434343;
+}
+
+.service_list {
+    margin-top: 32px;
+}
+
+.service_list li {
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.service_list li:first-child {
+    padding-left: 0px;
+}
+
+.service_list h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    color: #434343;
+    padding-top: 23px;
+}
+
+.service_list p {
+    width: 230px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #434343;
+    padding-top: 16px;
+}
+
+.design_building {
+    width: 310px;
+    height: 240px;
+    padding-left: 40px;
+    padding-top: 27px;
+    background: url(../Media/service_background.jpg);
+}
+
+.service_box {
+    width: 310px;
+    padding-left: 40px;
+    padding-top: 27px;
+}
+
+.service_box:hover {
+    background: url(../Media/service_background.jpg);
+    transition: all 0.9s ease 0s;
+    transform: scale(1.1);
+}
+
+.service_box:hover p,
+.service_box:hover h2 {
+    color: #FFFFFF;
+}
+
+.service_box:hover .service_img_1 {
+    display: none;
+}
+
+
+/* ..........................................  Content part II (benefits) .......................................... */
+
+.content_benefits {
+    margin-top: 100px;
 }
