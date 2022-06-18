@@ -98,7 +98,7 @@ body {
 }
 
 .contact_button:hover {
-    /* background: darkorange; */
+    background: darkorange;
     text-shadow: 0 1px 10px;
     transition: 0.4s;
     transform: scale(1.1);
@@ -178,7 +178,7 @@ body {
 }
 
 
-/* Здесь использовал формат svg, потому что хотел перекарсить иконки в оранжевый + возможность динамически менять цвет всех иконок, не ломая верстку */
+/* Здесь использовал формат svg, потому что хотел перекрасить иконки в оранжевый + возможность динамически менять цвет всех иконок, не ломая верстку */
 
 .popup_phone {
     background-image: url(../Media/Phone_logo.svg);
@@ -401,7 +401,7 @@ body {
 }
 
 .contact_button_2:hover {
-    /* background: darkorange; */
+    background: darkorange;
     text-shadow: 0 1px 10px;
     transition: 0.4s;
     transform: scale(1.1);
@@ -476,18 +476,14 @@ body {
     padding-top: 16px;
 }
 
-.design_building {
-    width: 310px;
-    height: 240px;
-    padding-left: 40px;
-    padding-top: 27px;
-    background: url(../Media/service_background.jpg);
-}
+
+/* Здесь выбирал между png и jpeg, решил оставить формат jpeg, с сжатием 90% */
 
 .service_box {
     width: 310px;
     padding-left: 40px;
     padding-top: 27px;
+    padding-bottom: 10px;
 }
 
 .service_box:hover {
@@ -510,4 +506,156 @@ body {
 
 .content_benefits {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.benefits_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.benefits_title h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 170%;
+    color: #056088;
+}
+
+.benefits_text {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits_text p {
+    width: 348px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: center;
+    color: #434343;
+}
+
+.benefits_gallery {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits_gallery_box {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+}
+
+.benefits_box_1 {
+    width: 420px;
+    height: 313px;
+    background-image: url(../Media/benefits_img_1.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.benefits_box_1 h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    color: #FFFFFF;
+    padding-top: 35px;
+}
+
+.benefits_box_1 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 16px;
+    width: 230px;
+    margin: 0 auto;
+}
+
+.benefits_box_2 {
+    width: 420px;
+    height: 313px;
+    background-image: url(../Media/benefits_img_2.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.benefits_box_2 h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    color: #FFFFFF;
+    padding-top: 35px;
+}
+
+.benefits_box_2 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 16px;
+    width: 306px;
+    margin: 0 auto;
+}
+
+.benefits_box_3 {
+    width: 420px;
+    height: 313px;
+    background-image: url(../Media/benefits_img_3.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.benefits_box_3 h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    color: #FFFFFF;
+    padding-top: 35px;
+}
+
+.benefits_box_3 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 16px;
+    width: 306px;
+    margin: 0 auto;
+}
+
+
+/* ..........................................  Content part III (works) .......................................... */
+
+.content_works {
+    height: 900px;
+    background-image: url(../Media/works_background.jpg);
+}
+
+.works_title {
+    padding-top: 173px;
+    display: flex;
+    justify-content: center;
+}
+
+.works_title h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 170%;
+    color: #FFFFFF;
 }
