@@ -1216,3 +1216,69 @@ body {
     width: 50%;
     padding: 20px;
 }
+
+
+/* ..........................................  Contact part I (header) .......................................... */
+
+.contact_header {
+    height: 450px;
+    width: 100%;
+    background: url(../Media/about_header.jpg);
+}
+
+.contact_header_top {
+    display: flex;
+}
+
+.contact_header_title {
+    width: 50%;
+}
+
+.contact_header_top h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 77px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 82px;
+}
+
+.contact_header_menu {
+    display: flex;
+    justify-content: right;
+    height: 108px;
+    width: 50%;
+}
+
+.contact_header_menu li {
+    display: inline-block;
+    padding-right: 40px;
+    padding-top: 57px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.contact_header_menu li:last-child {
+    padding-right: 70px;
+}
+
+.contact_header_menu a:hover {
+    color: darkorange;
+    text-shadow: 0 1px 10px;
+    transition: 0.4s;
+}
+
+.contact_header h1 {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 1030px;
+    margin: 0 auto;
+    padding-top: 110px;
+}
