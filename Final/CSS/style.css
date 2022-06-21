@@ -1282,3 +1282,34 @@ body {
     margin: 0 auto;
     padding-top: 110px;
 }
+
+
+/* ..........................................  Contact part II (main) .......................................... */
+
+.contact_main {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_main_img {
+    width: 530px;
+    height: 481px;
+    background: url(../Media/contact_main_img.jpg);
+}
+
+.contact_main_form {
+    width: 769px;
+    height: 481px;
+    background: #F5F5F5;
+}
+
+.contact_main_form h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 170%;
+    color: #056088;
+    padding-top: 44px;
+    padding-left: 39px
+}
