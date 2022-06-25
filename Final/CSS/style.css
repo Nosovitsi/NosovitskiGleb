@@ -1382,3 +1382,113 @@ body {
     transition: 0.4s;
     transform: scale(1.1);
 }
+
+
+/* ..........................................  Gallery part I (header) .......................................... */
+
+.gallery_header {
+    height: 450px;
+    width: 100%;
+    background: url(../Media/about_header.jpg);
+}
+
+.gallery_header_top {
+    display: flex;
+}
+
+.gallery_header_title {
+    width: 50%;
+}
+
+.gallery_header_top h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 77px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 82px;
+}
+
+.gallery_header_menu {
+    display: flex;
+    justify-content: right;
+    height: 108px;
+    width: 50%;
+}
+
+.gallery_header_menu li {
+    display: inline-block;
+    padding-right: 40px;
+    padding-top: 57px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.gallery_header_menu li:last-child {
+    padding-right: 70px;
+}
+
+.gallery_header_menu a:hover {
+    color: darkorange;
+    text-shadow: 0 1px 10px;
+    transition: 0.4s;
+}
+
+.gallery_header h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 110px;
+}
+
+
+/* ..........................................  Gallery part II (main) .......................................... */
+
+.gallery_main {
+    background: #FFFFFF;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery_column {
+    width: 420px;
+    height: 490px;
+    background: #FFFFFF;
+    margin-top: 100px;
+    -webkit-box-shadow: 3px 4px 12px 4px #000000;
+    box-shadow: 3px 4px 12px 4px #000000;
+}
+
+.gallery_column img {
+    width: 100%;
+    padding: 10px;
+}
+
+.gallery_column h3 {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 170%;
+    color: #056088;
+}
+
+.gallery_column p {
+    padding-top: 16px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #434343;
+}
